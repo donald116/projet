@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+- 2.2
+deploy:
+  provider: heroku
+  api_key:
+    secure: kRrlfz8Z5gbcdpwoZVqtC+DDyb/B+3Fc2g1OM3a3mRcR8oRoCsBV4M5KdgMT2Rpb5wnYfMxkwqvUKCFGC75+eHRARotq5AcKJ+zR0CxvKlR4xmkPJNMY9WYV9YiaTHRu9hU+V4Iim7b+02FUuupRtdm0vpfCw5BWL6V0iocknrKFD/6tioMRew3uowGP/G+6mCwgXozZczn8uTTqf6WhDhj16DjhK6pwKYrTX8GT5CK3ZEVnyvptZJgCHZuXfR/m3jkqonYCnwZwO+smBf0Gy32QpUqcBwbr2qIlhzcUIcJ92t0KPHyjGVy94E4eMIODiCsNH/ntbhQeRhXoaRMvR4AGhl4gLNQDg1ob3KCU/xi2rzRUfKUH3etu3rUkxh7owv6ZiB+t60nY4ppX9b1yOu2sSW8MnUDNS46cCEs9y6iY8fkBTsEQSAcY9wepx7rqiMdQT55SXqfc0JS1GApMX0RLgb9ns7HjlqSL4I/2fUGP2fW0bLLvKmYjUZvm2ZPCv+nbHrhhJ4zALNBDxXSJH+thhpme8cWRXDKiqA5o0rF1FROgScq72QNc77mATbBoIpYjbxf/0TNY4WPO9E0VeBajie+XpliCyK4TdhLrexWGJ2M7+WlOf5tmZ3D2evAdIOBF+u3VT2+z5iYzaHc34xyZ7esZILDNNJXZ2IjrAEI=
+  app: lpa12
+  on:
+    repo: donald116/projet
