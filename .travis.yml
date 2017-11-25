@@ -8,3 +8,4 @@ deploy:
   app: lpa12
   on:
     repo: donald116/projet
+  run: "rake db:migrate"
