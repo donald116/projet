@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: Belfort
-  lat: 47.6379599
-  lon: 6.8628942
+  name: belfort
+  lat: 1.5
+  lon: 1.5
 
-two:
-  name: Belfort
-  lat: 47.6379599
-  lon: 6.8628942
+inexisting:
+  name: inexistingTown
+  lat: 1.5
+  lon: 1.5
