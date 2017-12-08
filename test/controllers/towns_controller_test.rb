@@ -18,7 +18,7 @@ class TownsControllerTest < ActionController::TestCase
   end
 
   test "should create town" do
-    VCR.use_cassette("town ok") do
+    VCR.use_cassette("town_ok") do
       assert_difference('Town.count') do
         post :create, town: { name: @town.name }
       end
@@ -28,7 +28,7 @@ class TownsControllerTest < ActionController::TestCase
   end
   
   test "should fail if town does not exist" do
-    VCR.use_cassette("town fail") do
+    VCR.use_cassette("town_fail") do
       assert_no_difference('Town.count') do
         post :create, town: { name: @inexisting.name }
     end
@@ -38,7 +38,7 @@ class TownsControllerTest < ActionController::TestCase
   end
 
   test "should show town" do
-    VCR.use_cassette("town show") do
+    VCR.use_cassette("town_show") do
       get :show, id: @town
       assert_response :success
     end
@@ -50,7 +50,7 @@ class TownsControllerTest < ActionController::TestCase
   end
 
   test "should update town" do
-    VCR.use_cassette("town update") do
+    VCR.use_cassette("town_update") do
       patch :update, id: @town, town: { lat: @town.lat, lon: @town.lon, name: @town.name }
       assert_redirected_to town_path(assigns(:town))
     end
